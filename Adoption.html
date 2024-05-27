@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Adoption - Pawriendly Care</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/Pics/vetLogo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    h1{
+      font-weight: 600;
+    }
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+
+    #adoption {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+
+    .section-intro {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .pet-card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: #ffffff;
+      color:#004a6c;
+    }
+
+    .pet-card img {
+      border-radius: 10px;
+      max-height: 200px;
+      width: auto;
+      margin-bottom: 15px;
+      color: #004a6c;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="icon" src="assets/Pics/vetLogo.png" style="height: 90px; width: 90px;" alt="Logo">
+        Pawriendly Care
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse sticky-bar" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="adoption.html">Adoption</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Inside the section with id="adoption" -->
+  
+<section id="adoption">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 section-intro">
+        <h1 style="color: #004a6c; font-weight: 800;">Adopt a Pet</h1>
+        <div class="hline"></div>
+        <p style="color: rgb(0, 74, 108);">Find your new best friend today! Here are some of the pets available for adoption.</p>
+      </div>
+    </div>
+      <!-- Search Bar -->
+      <div class="col-12 mb-4">
+        <input type="text" id="searchBar" placeholder="Search for pets..." style="text-align: left;"> 
+    </div>
+    <div class="row">
+      <!-- Pet Filters -->
+      <div class="col-12 mb-4">
+        <label for="breedFilter" style="color: #004a6c;">Filter by Breed:</label>
+        <select id="breedFilter">
+          <option value="all">All Breeds</option>
+          <option value="puspin">Puspin</option>
+          <option value="bengal">Bengal</option>
+          <option value="persian">Persian</option>
+          <option value="aspin">Aspin</option>
+          <option value="labrador">Labrador</option>
+          <!-- Add more breed options as needed -->
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Pet Cards -->
+      <!-- Pet Card 1 -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="pet-card" data-breed="bengal">
+          <img src="assets/Pics/pet1.jpg" alt="Picture of Pet 1">
+          <h4>Togee</h4>
+          <p>Age: 2 years</p>
+          <p>Breed: Half Puspin/ Half Bengal</p>
+        </div>
+      </div>
+      <!-- Pet Card 2 -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="pet-card" data-breed="puspin">
+          <img src="assets/Pics/pet2.jpg" alt="Picture of Pet 2">
+          <h4>Kotaro</h4>
+          <p>Age: 1 year</p>
+          <p>Breed: Puspin</p>
+        </div>
+      </div>
+      <!-- Pet Card 3 -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="pet-card" data-breed="puspin">
+          <img src="assets/Pics/pet3.jpg" alt="Picture of Pet 3">
+          <h4>Nigguel</h4>
+          <p>Age: 3 months</p>
+          <p>Breed: Puspin</p>
+        </div>
+      </div>     
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="pet-card" data-breed="puspin">
+          <img src="assets/Pics/pet4.jpg" alt="Picture of Pet 3">
+          <h4>Vanilla</h4>
+          <p>Age: 5 months</p>
+          <p>Breed: Aspin</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="pet-card" data-breed="puspin">
+          <img src="assets/Pics/pet5.jpg" alt="Picture of Pet 3">
+          <h4>Chestnut</h4>
+          <p>Age: 1 yr</p>
+          <p>Breed: Labrador</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="pet-card" data-breed="puspin">
+          <img src="assets/Pics/pet6.jpg" alt="Picture of Pet 3">
+          <h4>Snowbell</h4>
+          <p>Age: 3 yrs</p>
+          <p>Breed: Persian</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
